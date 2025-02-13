@@ -1,10 +1,15 @@
 "use client"
 import { useEffect } from 'react';
 
-const GlowCard = ({ children , identifier}) => {
+const GlowCard = ({ children, identifier }) => {
   useEffect(() => {
+    // تأكد أنك في الـ Client
+    if (typeof window === "undefined") return;
+
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+
+    if (!CONTAINER || CARDS.length === 0) return; // تأكد أن العناصر موجودة
 
     const CONFIG = {
       proximity: 40,
@@ -16,14 +21,15 @@ const GlowCard = ({ children , identifier}) => {
     };
 
     const UPDATE = (event) => {
+      if (!event) return;
       for (const CARD of CARDS) {
         const CARD_BOUNDS = CARD.getBoundingClientRect();
 
         if (
-          event?.x > CARD_BOUNDS.left - CONFIG.proximity &&
-          event?.x < CARD_BOUNDS.left + CARD_BOUNDS.width + CONFIG.proximity &&
-          event?.y > CARD_BOUNDS.top - CONFIG.proximity &&
-          event?.y < CARD_BOUNDS.top + CARD_BOUNDS.height + CONFIG.proximity
+          event.x > CARD_BOUNDS.left - CONFIG.proximity &&
+          event.x < CARD_BOUNDS.left + CARD_BOUNDS.width + CONFIG.proximity &&
+          event.y > CARD_BOUNDS.top - CONFIG.proximity &&
+          event.y < CARD_BOUNDS.top + CARD_BOUNDS.height + CONFIG.proximity
         ) {
           CARD.style.setProperty('--active', 1);
         } else {
@@ -36,8 +42,7 @@ const GlowCard = ({ children , identifier}) => {
         ];
 
         let ANGLE =
-          (Math.atan2(event?.y - CARD_CENTER[1], event?.x - CARD_CENTER[0]) *
-            180) /
+          (Math.atan2(event.y - CARD_CENTER[1], event.x - CARD_CENTER[0]) * 180) /
           Math.PI;
 
         ANGLE = ANGLE < 0 ? ANGLE + 360 : ANGLE;
