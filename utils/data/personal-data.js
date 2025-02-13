@@ -1,19 +1,23 @@
 export const personalData = {
-  name: "Youssef Ayman",
+  name: "Ahmed M. Ezzeldeen",
   profile: "/Profile.jpeg",
-  designation: "Software Developer",
-  description:
-    "My name is Youssef Ayman. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and C#. I am available for any kind of job opportunity that suits my skills and interests.",
-  email: "youssef.ayman992003@gmail.com",
-  phone: "+201152206609",
+  designation: "Full-Stack web developer",
+  heroDescription:
+    "I am passionate about making the world a better place by finding space between code and design. I love learning about the latest technologies and finding out how to improve my craft. I am detail-oriented and focused. When I am not in front of a computer, I like playing chess or drinking ice coffee and relaxing.",
+  description: 
+  `My name is Ahmed M. Ezzeldeen I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
+    
+    `,
+  email: "Ahmed.Mohamed.Ezzeldeen@gmail.com",
+  phone: "+201151679537",
   address: "Cairo, Egypt",
-  github: "https://github.com/yosp313",
+  github: "https://github.com/Ahmed3zzeldeen",
   facebook: "",
-  linkedIn: "https://www.linkedin.com/in/youssef-ayman-7804682a8/",
+  linkedIn: "https://www.linkedin.com/in/Ahmed3zzeldeen",
   twitter: "",
   stackOverflow: "",
-  leetcode: "https://leetcode.com/user4321KT/",
-  devUsername: "yosp31",
+  leetcode: "https://leetcode.com/Ahmed3zzeldeen",
+  devUsername: "Ahmed3zzeldeen",
   resume:
-    "https://drive.google.com/file/d/1HHEhxy52ibI7TypzYTJiWcr78i3yI_eF/view?usp=sharing",
+    "https://docs.google.com/document/d/1TphwTxYbZ9dV-COMYObQXrnPsXhqMQ9DHe9Wn2Hotg0/edit?usp=sharing",
 };

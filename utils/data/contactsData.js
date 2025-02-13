@@ -1,8 +1,8 @@
 export const contactsData = {
-  email: "youssef.ayman992003@gmail.com",
-  phone: "+201152206609",
+  email: "Ahmed.Mohamed.Ezzeldeen@gmail.com",
+  phone: "+201151679537",
   address: "Cairo, Egypt",
-  github: "https://github.com/yosp313",
-  linkedIn: "https://www.linkedin.com/in/youssef-ayman-7804682a8/",
-  devUsername: "yosp31",
+  github: "https://github.com/Ahmed3zzeldeen",
+  linkedIn: "https://www.linkedin.com/in/Ahmed3zzeldeen",
+  devUsername: "Ahmed3zzeldeen",
 };
