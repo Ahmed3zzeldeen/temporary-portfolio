@@ -8,9 +8,9 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Youssef Ayman | Personal Portfolio",
+  title: "Ahmed M. Ezzeldeen | Personal Portfolio",
   description:
-    "This is the portfolio of Youssef Ayman. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "This is the portfolio of Ahmed M. Ezzeldeen. I'm Full-Stack web developer passionate about making the world a better place by finding space between code and design. I love learning about the latest technologies and finding out how to improve my craft. I am detail-oriented and focused. When I am not in front of a computer, I like playing chess or drinking ice coffee and relaxing.",
 };
 
 export default function RootLayout({ children }) {
