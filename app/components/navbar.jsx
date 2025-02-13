@@ -6,8 +6,8 @@ function Navbar() {
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
-          <Link href="/" className=" text-[#16f2b3] text-3xl font-bold">
-            YA
+          <Link href="/" className=" text-pink-400 text-4xl font-bold">
+            Æ
           </Link>
         </div>
 
@@ -52,16 +52,6 @@ function Navbar() {
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 EDUCATION
-              </div>
-            </a>
-          </li>
-          <li>
-            <a
-              className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="#blogs"
-            >
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                BLOGS
               </div>
             </a>
           </li>
