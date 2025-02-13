@@ -2,7 +2,6 @@
 
 import { experiences } from "@/utils/data/experience";
 import Image from "next/image";
-import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import experience from "/public/lottie/code.json";
@@ -46,7 +45,7 @@ function Experience() {
                   key={experience.id}
                   identifier={`experience-${experience.id}`}
                 >
-                  <div className="p-3 relative">
+                  <a href={experience.certificateLink} className="px-6 relative">
                     <Image
                       src="/blur-23.svg"
                       alt="Hero"
@@ -59,9 +58,17 @@ function Experience() {
                         {experience.duration}
                       </p>
                     </div>
-                    <div className="flex items-center gap-x-8 px-3 py-5">
+                    <div className="flex gap-x-8 px-6 py-5">
                       <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                        <BsPersonWorkspace size={36} />
+                        
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img 
+                          src={experience.image}
+                          alt={`company-name-${experience.company}`}
+                          width={60}
+                          height={60}
+                          style={{borderRadius: '50%'}}
+                        />
                       </div>
                       <div>
                         <p className="text-base sm:text-xl mb-2 font-medium uppercase">
@@ -70,9 +77,13 @@ function Experience() {
                         <p className="text-sm sm:text-base">
                           {experience.company}
                         </p>
+                        <p className="text-sm sm:text-base">
+                        Credential ID : <br/> 
+                        {experience.credentialID}
+                        </p>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </GlowCard>
               ))}
             </div>
