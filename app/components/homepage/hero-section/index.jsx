@@ -22,32 +22,39 @@ function HeroSection() {
 
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
-          <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-            Hello, <br />
-            This is <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]">{personalData.designation}</span>.
+          <h1 className="
+          text-2xl font-bold leading-10 text-white 
+          md:font-extrabold 
+          lg:text-[1.6rem] 
+          lg:leading-[2.5rem]
+          ">
+            👋  Hi, my name is <br />
+            <strong className="text-5xl">{personalData.name}</strong><br />
+            <span className="text-sky-600">{personalData.designation}</span>
           </h1>
+          <p className="text-gray-400 mt-5 text-sm md:text-base lg:text-lg">
+            {personalData.heroDescription}
+          </p>
 
           <div className="my-12 flex items-center gap-5">
             <Link
               href={personalData.github}
               target="_blank"
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-white hover:scale-125 duration-300"
             >
               <BsGithub size={30} />
             </Link>
             <Link
               href={personalData.linkedIn}
               target="_blank"
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-white hover:scale-125 duration-300"
             >
               <BsLinkedin size={30} />
             </Link>
             <Link
               href={personalData.leetcode}
               target="_blank"
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
+              className="transition-all text-white hover:scale-125 duration-300"
             >
               <SiLeetcode size={30} />
             </Link>
@@ -56,7 +63,7 @@ function HeroSection() {
           <div className="flex items-center gap-3">
             <Link
               href="#contact"
-              className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
+              className="bg-gradient-to-r to-sky-500 from-blue-600 p-[1px] rounded-full transition-all duration-300 hover:from-sky-500 hover:to-blue-600"
             >
               <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                 <span>Contact me</span>
@@ -65,7 +72,7 @@ function HeroSection() {
             </Link>
 
             <Link
-              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
               role="button"
               target="_blank"
               href={personalData.resume}
@@ -98,7 +105,7 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Youssef Ayman</span>
+                <span className="text-amber-300">Ahmed Mohamed Ezzeldeen</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
@@ -112,7 +119,7 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Express</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Asp.Net</span>
+                <span className="text-amber-300">Typescript</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">MySql</span>
                 <span className="text-gray-400">{"', '"}</span>
